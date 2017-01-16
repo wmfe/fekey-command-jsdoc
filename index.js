@@ -2,9 +2,11 @@ var jsdocFunction = function () {
     (function(args) {
         'use strict';
         var path;
-
+        if (process.argv.indexOf('jsdoc') > -1) {
+            process.argv.splice(process.argv.indexOf('jsdoc'), 1)
+        }
         // we should be on Node.js
-        args = [__dirname + '/node_modules/jsdoc/', process.cwd() + '/node_modules/jsdoc/'];
+        args = [__dirname + '/node_modules/jsdoc/', process.cwd()];
         path = require('path');
 
         // Create a custom require method that adds `lib/jsdoc` and `node_modules` to the module
