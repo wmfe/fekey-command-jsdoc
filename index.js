@@ -1,4 +1,4 @@
-var jsdocFunction = function () {
+var jsdocFunction = function (argv, k_cli, cli, env) {
     (function(args) {
         'use strict';
         var path;
@@ -94,4 +94,4 @@ var jsdocFunction = function () {
     })();
 }
 
-module.exports = jsdocFunction;
+exports.run = jsdocFunction;
