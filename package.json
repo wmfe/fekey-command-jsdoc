@@ -1,6 +1,6 @@
 {
   "name": "fekey-command-jsdoc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "fekey command of jsdoc",
   "main": "index.js",
   "scripts": {
